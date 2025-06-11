@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            background: #f0f8ff;
+            color: #333;
+            text-align: center;
+        }
+        #message {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Holiday Finder</h1>
+    <div id="message">Finding a fun holiday...</div> 
+    <script>
+        const dt = new Date();
+        const month = dt.getMonth();
+
+        const holidays = [
+            'January 4 is National Spaghetti Day!',
+            'February 9 is National Pizza Day!',
+            'March 26 is National Spinach Day!',
+            'April 26 is National Pretzel Day!',
+            'May 15 is National Chocolate Chip Day!',
+            'June 18 is International Sushi Day!',
+            'July 7 is World Chocolate Day!',
+            'August 3 is National Watermelon Day!',
+            'September 29 is National Coffee Day!',
+            'October 4 is National Taco Day!',
+            'November 3 is National Sandwich Day!',
+            'December 8 is National Brownie Day!'
+        ];
+
+        const el = document.getElementById('message');
+        el.innerHTML = holidays[month];
+    </script>
+</body>
+</html>
